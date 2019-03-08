@@ -53,7 +53,7 @@ with smart_run(session):
     """ Massive Follow of users followers (I suggest to follow not less than
     3500/4000 users for better results)...
     """
-    accs = ['luchopizichini1', 'vvaleber', 'dukissj', 'frankkasterx']
+    accs = ['user1', 'user2', 'user3']
     session.follow_user_followers(accs, amount=4500,
                                   randomize=False, interact=False)
 
