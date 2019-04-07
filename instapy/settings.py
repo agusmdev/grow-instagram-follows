@@ -11,7 +11,7 @@ from os.path import join as join_path
 from os.path import exists as path_exists
 
 
-WORKSPACE = {"name": "InstaPy",
+WORKSPACE = {"name": "AmInstaPy",
              "path": environmental_variables.get("INSTAPY_WORKSPACE")}
 OS_ENV = ("windows" if platform == "win32"
           else "osx" if platform == "darwin"
@@ -75,6 +75,8 @@ class Settings:
     # state of instantiation of InstaPy
     InstaPy_is_running = False
 
+    # This is where currently the pods server is hosted
+    pods_server_endpoint = 'https://us-central1-instapy-pods.cloudfunctions.net'
 
 class Storage:
     """ Globally accessible standalone storage """
